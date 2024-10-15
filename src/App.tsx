@@ -1,31 +1,22 @@
-import { Hammer } from "lucide-react";
-import { HardHat } from "lucide-react";
-import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
-function App() {
+export function App() {
   return (
-    <main>
-      <BackgroundBeamsWithCollision>
-        <div className="text-center space-y-6 p-8 dark:text-white">
-          <div className="flex justify-center space-x-4">
-            <Hammer className="w-12 h-12 text-yellow-500" />
-            <HardHat className="w-12 h-12 text-yellow-500" />
-          </div>
-          <h1 className="text-4xl font-bold dark:text-white">
-            Under Construction
-          </h1>
-          <p className="text-xl dark:text-white">
-            We're working hard to bring you something amazing. Please check back
-            soon!
-          </p>
-          <div className="w-full bg-gray-200 rounded-full h-2.5">
-            <div className="bg-yellow-500 h-2.5 rounded-full w-1/2"></div>
-          </div>
-          <p className="text-sm dark:text-white">Expected completion: Soon™</p>
-        </div>
-      </BackgroundBeamsWithCollision>
+    <main className="bg-black">
+      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+        <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+          My Portfolio, <br /> Moch Dicky Novaldi.
+        </h2>
+        <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+          Welcome to my portfolio website! I'm excited to share my work and
+          experiences with you. Feel free to explore and get to know me better.
+        </p>
+      </BackgroundLines>
+      <div className="flex items-center justify-center w-full flex-col px-4">
+        <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+          About me
+        </h2>
+      </div>
     </main>
   );
 }
-
-export default App;
